@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <title>CALCULADORA</title>
 </head>
-<style type="text/css">
-    body {
-        background-color: rgb(211, 221, 240);
-    }
-    h1 {
-        color: black;
-        padding: 10px;
-    } 
-</style>
 <body>
     <body><h1><center>CALCULADORA BÁSICA</center></h1>
     <form><center>
@@ -22,28 +14,23 @@
         <input type="text" id="num1">
         <br>
         <br>
+        <select> 
+               <option <button type="button" onclick="somar()" >Somar</button></option>
+               <option <button type="button" onclick="substituir()" >Substituir</button></option>
+               <option <button type="button" onclick="dividir()" >Dividir</button></option>
+               <option <button type="button" onclick="multiplicar()" >Multiplicar</button></option>
+        </select>
         <h3>VALOR 2</h3>
         <input type="text" id="num2">
         <br>
         <br>
-        <button type="button" onclick="somar()" >RESULTADO</button>
+        <button type="button">RESULTADO</button>
         <br>
         <br>
         <input type="text" id="resp" readonly>
         <br></center>
     </form>
-    <script>
-        function somar(){
-            var num1, num2, resp;
-
-            num1 = parseFloat(document.getElementById("num1").value);
-            num2 = parseFloat(document.getElementById("num2").value);
-
-            resp = num1 + num2;
-
-            document.getElementById("resp").value = resp;
-        }
-        function 
+    <script type="text/javascript" src="script.js">
     </script>
 </body>
 </html>
