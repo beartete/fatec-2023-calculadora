@@ -8,28 +8,28 @@
     <title>CALCULADORA</title>
 </head>
 <body>
-    <body><h1><center>CALCULADORA BÁSICA</center></h1>
-    <form><center>
-        <h3>VALOR 1</h3>
-        <input type="text" id="num1">
+    <body>
+    <div class="borda">
         <br>
-        <br>
-        <select> 
-               <option <button type="button" onclick="somar()" >Somar</button></option>
-               <option <button type="button" onclick="substituir()" >Substituir</button></option>
-               <option <button type="button" onclick="dividir()" >Dividir</button></option>
-               <option <button type="button" onclick="multiplicar()" >Multiplicar</button></option>
-        </select>
-        <h3>VALOR 2</h3>
-        <input type="text" id="num2">
-        <br>
-        <br>
-        <button type="button">RESULTADO</button>
-        <br>
-        <br>
-        <input type="text" id="resp" readonly>
-        <br></center>
-    </form>
+        <h1>CALCULADORA BÁSICA</h1>
+        <form>
+            <h2>VALOR 1</h2>
+            <input type="text" id="num1">
+            <h2>VALOR 2<h2>
+            <input type="text" id="num2">
+            <br>
+            <button type="button" onclick="somar()">+</button>
+            <button type="button" onclick="substrair()">-</button>
+            <button  type="button" onclick="dividir()">/</button>
+            <button type="'button" onclick="multiplicar()">x</button>
+            <button type="reset" onclick="limpar()">C</button>
+            <br>
+            <h2>RESULTADO</h2>
+            <input type="text" id="resp" readonly> 
+            <br>
+            <br>
+        </form>
+    </div>
     <script type="text/javascript" src="script.js">
     </script>
 </body>
